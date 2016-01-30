@@ -9,10 +9,29 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var boomApp: UIImageView!
+    @IBOutlet weak var backgroundImage: UIImageView!
+    @IBOutlet weak var coolButton: UIButton!
+    
+    @IBAction func makeCool(sender: AnyObject) {
+        
+        boomApp.hidden = false
+        backgroundImage.hidden = false
+        coolButton.hidden = true
+        
+    }
+    
+    
 
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        boomApp.hidden = true
+        backgroundImage.hidden = true
+        coolButton.hidden = false
+        
     }
 
     override func didReceiveMemoryWarning() {
